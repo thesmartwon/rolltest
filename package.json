@@ -1,0 +1,13 @@
+{
+  "name": "rolltest",
+  "type": "module",
+  "scripts": {
+    "build": "rolldown -c ./rolldown.config.js",
+    "start": "node ./watch.js"
+  },
+  "dependencies": {
+    "rolldown": "^0.14.0",
+    "svelte": "^5.1.12",
+    "tinybase": "^5.3.8"
+  }
+}
