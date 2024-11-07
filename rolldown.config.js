@@ -9,7 +9,7 @@ export default defineConfig({
 	plugins: [{
 		name: "check for bundle change",
 		writeBundle(_, b) {
-			const fileList = Object.keys(b).filter((f) => !f.endsWith(".map"));
+			const fileList = Object.keys(b);
 			const newFiles = new Set(fileList);
 			if (files.size) {
 				const added = Array.from(newFiles.difference(files));
@@ -25,7 +25,7 @@ export default defineConfig({
 		entryFileNames: "[name]-[hash].js",
 		advancedChunks: {
 			groups: [
-				{ name: "vendor", test: /node_modules/, priority: 11 },
+				{ name: "vendor", test: /node_modules/ },
 			]
 		},
 	},
