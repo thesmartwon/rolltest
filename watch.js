@@ -1,4 +1,6 @@
 import { watch } from 'rolldown';
-import config from './rolldown.config.js';
 
-await watch(config);
+const watcher = await watch({ input: "main.js" });
+watcher.on('event', (ev) => {
+  console.log(ev.code);
+});
