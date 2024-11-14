@@ -6,6 +6,6 @@
     "start": "node ./watch.js"
   },
   "dependencies": {
-    "rolldown": "^0.14.0"
+    "rolldown": "^0.14.0-snapshot-d5e797b-20241114003621"
   }
 }
