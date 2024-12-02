@@ -5,7 +5,7 @@
     "build": "rolldown -c ./rolldown.config.js"
   },
   "dependencies": {
-    "rolldown": "^0.14.0",
+    "rolldown": "0.14.0-snapshot-12d7e71-20241201004055",
     "svelte": "^5.1.12",
     "tinybase": "^5.3.8"
   }
